@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galería de fotografías de Más allá del feed." />
+    <meta name="theme-color" content="#050918" />
+    <title>Galería | Más allá del feed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="gallery-page">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html#inicio" aria-label="Volver a Más allá del feed">
+            <img src="assets/logo.svg" alt="Símbolo gráfico de DosCaras.IA" />
+            <span>Más allá del feed</span>
+          </a>
+
+          <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Abrir menú</span>
+          </button>
+
+          <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#noticias-ia">Noticias IA</a>
+            <a href="index.html#actualidad">Actualidad</a>
+            <a href="index.html#tecnologia">Tecnología</a>
+            <a href="index.html#sociedad">Sociedad</a>
+            <a href="index.html#opinión">Opinión</a>
+            <a href="index.html#trabajos">Trabajos</a>
+            <a href="galeria.html" aria-current="page">Galería</a>
+            <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="gallery-main">
+        <section class="container gallery-intro" aria-labelledby="gallery-title">
+          <h1 id="gallery-title">Galería</h1>
+          <p>
+            Explora ilustraciones, retratos e imágenes de todas las secciones del proyecto.
+          </p>
+        </section>
+
+        <section class="container gallery-grid" aria-label="Galería completa del proyecto">
+          <figure class="gallery-slot" data-detail data-detail-view="page">
+            <div class="gallery-slot-media">
+              <img src="assets/images/ef0b17c252c266b22df3f025d0805672.jpg" alt="Escultura de un rostro de piedra agrietado en blanco y negro." loading="lazy" />
+            </div>
+            <figcaption>Rostro de piedra fragmentado</figcaption>
+          </figure>
+          <figure class="gallery-slot" data-detail data-detail-view="page">
+            <div class="gallery-slot-media">
+              <img src="assets/images/b72fa29ce6de4cbdc61de01c3bdb36d0.jpg" alt="Composición granulada de rostros en blanco y negro." loading="lazy" />
+            </div>
+            <figcaption>Rostros en grano monocromático</figcaption>
+          </figure>
+          <figure class="gallery-slot" data-detail data-detail-view="page">
+            <div class="gallery-slot-media">
+              <img src="assets/images/Estudio creativo futurista en neón.png" alt="Estudio creativo con herramientas digitales iluminadas en tonos neón." loading="lazy" />
+            </div>
+            <figcaption>Estudio creativo digital</figcaption>
+          </figure>
+          <figure class="gallery-slot" data-detail data-detail-view="page">
+            <div class="gallery-slot-media">
+              <img src="assets/Laboratorio holográfico del futuro.png" alt="Laboratorio futurista con globo, microscopio y pantallas digitales." loading="lazy" />
+            </div>
+            <figcaption>Laboratorio holográfico</figcaption>
+          </figure>
+          <figure class="gallery-slot" data-detail data-detail-view="page">
+            <div class="gallery-slot-media">
+              <img src="assets/temas para explorar/historia4.jpg" alt="Manos metálicas sosteniendo un teléfono con una red social." loading="lazy" />
+            </div>
+            <figcaption>Mirada digital</figcaption>
+          </figure>
+        </section>
+
+        <a class="button secondary home-return-button" href="index.html#inicio" aria-label="Volver al inicio de la página principal">Volver al inicio</a>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a class="brand footer-brand" href="index.html#inicio">
+              <img src="assets/logo.svg" alt="Símbolo gráfico de DosCaras.IA" />
+              <span>Más allá del feed</span>
+            </a>
+          </div>
+          <nav class="footer-nav" aria-label="Navegación del pie de página">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#noticias-ia">Noticias IA</a>
+            <a href="index.html#trabajos">Trabajos</a>
+            <a href="galeria.html" aria-current="page">Galería</a>
+          </nav>
+          <div class="footer-meta">
+            <span>© <span id="year"></span> Más allá del feed</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
